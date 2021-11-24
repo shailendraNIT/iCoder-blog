@@ -37,7 +37,7 @@
               <a class="nav-link " aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/about.html">About</a>
+              <a class="nav-link " href="/about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -61,7 +61,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contactus.html">Contact Us</a>
+              <a class="nav-link active" href="/contactus.html">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -80,59 +80,33 @@
     </nav>
 
     <div class="container mt-4">
-      <div
-        class="row featurette d-flex justify-content-center align-items-center"
-      >
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            iCoder's vision.
-            <span class="text-muted">To change the world.</span>
-          </h2>
-          <p class="lead">
-            The Vision of iCoder is to show the world a new perception in the era of technology.
-          </p>
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="col-md-5">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1526253038957-bce54e05968e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaCxjb2RlfHx8fHx8MTYzNzczMzkwOA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=500" width="400"
-          />
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select your concern</option>
+                <option value="1">Web</option>
+                <option value="2">Programming language</option>
+                <option value="3">Technology</option>
+              </select>
         </div>
-      </div>
-
-
-      <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">The idea of iCoder. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">iCoder's idea came up in the head of a team members in NIT
-            kurukshetra.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1497681883844-82b4f0a359a4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaCxsYXB8fHx8fHwxNjM3NzMzOTc0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=500" width="400"
-          />
-  
-        </div>
-      </div>
-
-      
-      <div
-        class="row featurette d-flex justify-content-center align-items-center"
-      >
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Start of iCoder.
-            <span class="text-muted">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">
-            It started in 2017 in hostel room of NIT kurukshetra.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaCx3b3JsZHx8fHx8fDE2Mzc3MzQwMzE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=500" width="400"
-          />
-        </div>
-      </div>
+        <div class="form-check m-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Are you a member?
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Elaborate your concern here.</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
 
     <footer class="container">
