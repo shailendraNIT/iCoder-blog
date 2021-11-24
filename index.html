@@ -74,17 +74,158 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
+            <button
+              type="button"
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Signup
+            </button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!--Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">login</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleFormControlInput2"
+              />
+            </div>
+            <button class="btn btn-primary">Login</button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">
+              Create a new account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleFormControlInput2"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleFormControlInput2"
+              />
+            </div>
+            <button class="btn btn-primary">Create account</button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
       data-bs-ride="carousel "
     >
-      <div class="carousel-indicators ">
+      <div class="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -106,7 +247,7 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner ">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./images/1.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
@@ -118,7 +259,11 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://source.unsplash.com/1400x300/?tech" class="d-block w-100" alt="..." />
+          <img
+            src="https://source.unsplash.com/1400x300/?tech"
+            class="d-block w-100"
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
             <h2>Welcome to iCoder</h2>
             <p>The right place for all kind of tech related information.</p>
@@ -164,32 +309,115 @@
 
     <div class="row mb-2 m-4">
       <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div
+          class="
+            row
+            g-0
+            border
+            rounded
+            overflow-hidden
+            flex-md-row
+            mb-4
+            shadow-sm
+            h-md-250
+            position-relative
+          "
+        >
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Technology</font></font></strong>
-            <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CryptoCurrency future</font></font></h3>
-            <div class="mb-1 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 24</font></font></div>
-            <p class="card-text mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crypto-currency may see a hike of 100% in coming 4-5 years as all the big techs are moving forward in the direction of this new blockchain technology.</font></font></p>
-            <a href="#" class="stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Continue reading..</font></font></a>
+            <strong class="d-inline-block mb-2 text-primary"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Technology</font></font
+              ></strong
+            >
+            <h3 class="mb-0">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >CryptoCurrency future</font
+                ></font
+              >
+            </h3>
+            <div class="mb-1 text-muted">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">November 24</font></font
+              >
+            </div>
+            <p class="card-text mb-auto">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Crypto-currency may see a hike of 100% in coming 4-5 years as
+                  all the big techs are moving forward in the direction of this
+                  new blockchain technology.</font
+                ></font
+              >
+            </p>
+            <a href="#" class="stretched-link"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Continue reading..</font
+                ></font
+              ></a
+            >
           </div>
           <div class="col-auto d-none d-lg-block">
-            <img src="https://images.unsplash.com/photo-1625806744302-7cd13216a425?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8Y3J5cHRvfHx8fHx8MTYzNzczMTIxNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200"/>
-  
+            <img
+              src="https://images.unsplash.com/photo-1625806744302-7cd13216a425?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8Y3J5cHRvfHx8fHx8MTYzNzczMTIxNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200"
+            />
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div
+          class="
+            row
+            g-0
+            border
+            rounded
+            overflow-hidden
+            flex-md-row
+            mb-4
+            shadow-sm
+            h-md-250
+            position-relative
+          "
+        >
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web-development</font></font></strong>
-            <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Job title</font></font></h3>
-            <div class="mb-1 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">November 24</font></font></div>
-            <p class="mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The Javascript frameworks like react and angular are taking over the vanilla JS.</font></font></p>
-            <a href="#" class="stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Continue reading..</font></font></a>
+            <strong class="d-inline-block mb-2 text-success"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Web-development</font
+                ></font
+              ></strong
+            >
+            <h3 class="mb-0">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Job title</font></font
+              >
+            </h3>
+            <div class="mb-1 text-muted">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">November 24</font></font
+              >
+            </div>
+            <p class="mb-auto">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >The Javascript frameworks like react and angular are taking
+                  over the vanilla JS.</font
+                ></font
+              >
+            </p>
+            <a href="#" class="stretched-link"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Continue reading..</font
+                ></font
+              ></a
+            >
           </div>
           <div class="col-auto d-none d-lg-block">
-            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VifHx8fHx8MTYzNzczMTU3Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" />
-  
+            <img
+              src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=250&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VifHx8fHx8MTYzNzczMTU3Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200"
+            />
           </div>
         </div>
       </div>
@@ -197,7 +425,10 @@
 
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      <p>
+        © 2017–2021 Company, Inc. · <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
